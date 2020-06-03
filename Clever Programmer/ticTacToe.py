@@ -6,11 +6,18 @@ def display_board():
     print(board[3] + " | " + board[4] + " | " + board[5])
     print(board[6] + " | " + board[7] + " | " + board[8])
 
+<<<<<<< HEAD
 def play_game():
 
     display_board()
 
-    handle_turn()
+    while game_still_going:
+
+        handle_turn(current_player)
+
+        check_if_game_over()
+
+        flip_player()
 
 
 def handle_turn():
@@ -21,6 +28,10 @@ def handle_turn():
     display_board()
 
 play_game()
+=======
+display_board()
+
+>>>>>>> e7fb5feaa60423fe4bc9493730fbd388c0c2c4b1
 
 
 # Board
