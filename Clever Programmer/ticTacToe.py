@@ -52,6 +52,7 @@ def handle_turn(player):
             print("You can't go there. Go again.")
 
     board[position] = player
+
     display_board()
 
 def check_if_game_over():
@@ -129,7 +130,7 @@ def check_dioganals():
     if diagonal_1:
         return board[0]
     elif diagonal_2:
-        return board[3]
+        return board[2]
 
 def check_if_tie():
     global game_still_going
